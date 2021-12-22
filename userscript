@@ -1,0 +1,16 @@
+// ==UserScript==
+// @name         Medium Arch Tutorial
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://davidhsmith4.medium.com/installing-arch-linux-a-beginners-guide-part-1-b1c2f399d5ee
+// @icon         https://www.google.com/s2/favicons?domain=medium.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict'
+    // Your code here...
+    document.getElementById("fcf3").innerHTML="This section originally said stuff about bootloaders, and tells you to install GRUB because its the simplest and most popular. However, while you're here, please please please please PLEASE also install 'dhcpcd.' The tutorial doesn't tell you this but it's immensely useful for connecting to the internet. After your first reboot you wont be able to unless you do this and then enable it with.... something for the next edit. Just install this. You can enable it later. Worse comes to worse, stick that USB back in.";
+})();
